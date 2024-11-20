@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Informasi Anggota Kelompok</h1>
+            <p>website buatan anak SI semester 1 kampus:</p>
+        </div>
+        <div class="hero-image">
+            <img src="logoums.png" alt="Logo UMS">
+        </div>
+        <div class="hero-content">
+            <button class="cta-btn" onclick="scrollToCards()">gulir kebawah</button>
+            <p>Klik pada kartu nama dibawah untuk melihat informasi anggota kelompok kami.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-container" id="cards">
+            <div class="card" onclick="goToDetail('java')">
+                <div class="card-content">
+                    <h2>Java</h2>
+                    <p>____________</p>
+                </div>
+            </div>
+            <div class="card" onclick="goToDetail('egi')">
+                <div class="card-content">
+                    <h2>Egi</h2>
+                    <p>____________</p>
+                </div>
+            </div>
+            <div class="card" onclick="goToDetail('nafryeza')">
+                <div class="card-content">
+                    <h2>Nafryeza</h2>
+                    <p>Pecinta Perjalanan</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Informasi Anggota | Proyek kelompok: Java, Egi, Nafryeza</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
